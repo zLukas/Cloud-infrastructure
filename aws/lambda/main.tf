@@ -15,3 +15,12 @@ resource "aws_lambda_function" "lambda" {
     variables = var.env_vars
       }
 }
+
+
+resource "aws_lambda_function_url" "invoke_url" {
+  function_name      = var.lambda_name
+  authorization_type = "AWS_IAM"
+  depends_on = [
+    aws_lambda_function.lambda
+  ]
+}
