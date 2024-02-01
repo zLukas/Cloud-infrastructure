@@ -1,2 +1,2 @@
 # Cloud-infrastructure
-Public cloud providers IaaS scripts 
+Public cloud providers terrafform IaaS scripts.
